@@ -6,7 +6,16 @@
 <link rel="stylesheet" href="">
 <style>
 </style>
-<script src=""></script>
+<script type="text/javascript">
+    function BWS(){
+        console.log('triggered')
+        let rank = parseInt(document.getElementById("rank").value)
+        let badges = parseInt(document.getElementById("badges").value)
+        let bws = Math.pow(rank,Math.pow(0.9915,Math.pow(badges,2)))
+        document.getElementById('result').value = bws.toString()
+    }
+    
+</script>
 <body>
 
 <div class="">
@@ -15,32 +24,58 @@
 </div>
 <div>
     <h2>Overview</h2>
-    6 Digit European Suiji Cup (6ESC) is a 6 Digit (100k+) 4v4 teamsize 8 Suiji National tournament limited to European* countries. 
-    Suiji format allows open, unlimited signups, but only the x highest rank players advance. 
-    For this tournament that means countries will not have tryouts, the players 8 ranked closest to 100k after "BWS" when regs close will represent their country.
+    <p>
+        6 Digit European Suiji Cup (6ESC) is a 6 Digit (100k+) 4v4 teamsize 8 Suiji National tournament limited to European* countries. 
+        Suiji format allows open, unlimited signups, but only the x highest rank players advance. 
+        For this tournament that means countries will not have tryouts, the players 8 ranked closest to 100k after "BWS" when regs close will represent their country.
+    </p>
     <h2>European Countries</h2>
-    For the purposes of this tournament, the following countries are eligible: 
-    Albania, Andorra, Armenia, Austria, Azerbaijan, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Georgia, Germany,
-    Greece, Hungary, Iceland, Ireland, Italy, Kazakhstan, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, The Netherlands, North Macedonia, Norway, 
-    Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey, Ukraine, United Kingdom, Vatican City
+        <h4>For the purpose of this tournament, the following countries are eligible:</h4>
+            <p>
+                Albania, Andorra, Armenia, Austria, Azerbaijan, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Georgia, Germany,
+                Greece, Hungary, Iceland, Ireland, Italy, Kazakhstan, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, The Netherlands, North Macedonia, Norway, 
+                Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey, Ukraine, United Kingdom, Vatican City
+            </p>
+        <h4>For the purpose of this tournament, the following dependendent territories may compete under the associated "major nation":</h4>
+            <p>
+                United Kindom: Akrotiri and Dhekelia, Gibraltar, Guernsey, Isle of Man, Jersey
+                <br>Denmark: Faroe Islands
+                <br>Sweden: Åland
+                <br>Norway: Svalbard
+            </p>
+        <h4>The following countries are eligible but must compete under a neutral flag:</h4>
+            <p>
+                Russian Federation, Republic of Belarus
+            </p>
+        <p>
+            <br>If you believe your nation or territory counts as European but was not included, please DM the Host, she may have missed it.
+            <br>If you don't have the flag from one of the countries but you are a legal resident, you may DM the Host evidence of such, and if sufficient you will be manually added.
+            <br>If your nation does not reach the required signups to participate (4), you may request to be merged into a neighboring nation. Please DM the host once screening closes.
+        </p>
 
-    For the purposes of this tournament, the following dependendent territories may compete under the associated "major nation":
-    United Kindom: Akrotiri and Dhekelia, Gibraltar, Guernsey, Isle of Man, Jersey
-    Denmark: Faroe Islands
-    Sweden: Åland
-    Norway: Svalbard
-
-    The following countries are eligible but must compete under a neutral flag: Russian Federation, Republic of Belarus
-
-    If you don't have the flag from one of the countries but you are a legal resident, you may DM the Host evidence of such, and will be manually added.
-    If your nation does not reach the required signups to participate (4), you may request to be merged into a neighboring nation. Please DM the host once screening closes.
+    
 
   <h2>What do you mean by "BWS"?</h2>
-  We are using a quasi Badge-Weighting-System(BWS). Players will have to self-report recent tournament wins, and those will be treated like badges. If a player fails to correctnly self-report, and this is brought to our attention by a third party after screening is complete, they will be disqualified. If screening is not yet complete or they self-reported and are still eligible rank-wise, they will be permitted to participate.
+    <p>
+        We are using a quasi Badge-Weighting-System(BWS). Players will have to self-report recent tournament wins, and those will be treated like badges. If a player fails to correctly self-report, and this is brought to our attention by a third party after screening is complete, they will be disqualified. If screening is not yet complete or they self-reported and are still eligible rank-wise, they will be permitted to participate.
+    </p>
   <h2>Rules</h2>
-  <h3>Eligibility</h3>
-  Ranking to 99999 (post-BWS) or higher within 90 days of regs closing will result in ineligibility. This is meant to discourage deranking. 
-  We will be using BWS where recent tournament wins will be counted as "badges". This may affect your eligibility, so make sure to use the BWS calculator provided on this website.
+    <h3>Quasi Badge-Weighting-System (BWS)</h3>
+        <p>
+            This Tournament uses a quasi Badge-Weighting-System (BWS). This is because tournaments at this rank range are not badged, but we want to exclude derankers who ruin the fun for everyone else.
+            <br>Players will have to self-report recent tournament wins (past 12 months), and those will be treated like badges.
+            <br>If a player fails to correctly self-report, and this is brought to our attention by a third party after screening is complete, they will be disqualified. 
+            <br>If screening is not yet complete or they self-reported and are still eligible rank-wise, they will be permitted to participate.
+            <br>The BWS formula we use is Rank^(0.9915^(badges^2))
+            <br> BWS Calculator: Rank-<input type="number" id="rank"> Wins-<input type="number" id="badges"> <input type="button" value="Calculate" onclick="BWS()"> Result-<input type="text" readonly="true" id="result">
+        </p>
+    <h3>Eligibility</h3>
+        <p>
+            Players ranked between and including 100000 to 999999 Post-BWS at time of registration closing may be eligible to participate.
+            <br>Ranking to 99999 (post-BWS) or higher within 90 days of regs closing will result in ineligibility. This is meant to discourage deranking.
+            <br>We will be using BWS where recent tournament wins will be counted as "badges". This may affect your eligibility, so make sure to use the BWS calculator provided on this website.
+        </p>
+    
 </div>
 </body>
 </html> 
