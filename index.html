@@ -28,7 +28,7 @@
     <p>
         6 Digit European Suiji Cup (6ESC) is a 6 Digit (100k+) 4v4 teamsize 8 Suiji National tournament limited to European* countries. 
         Suiji format allows unlimited signups, but only the x highest rank players qualify. 
-        For this tournament that means countries will not have tryouts, the players 8 ranked closest to 100k after "BWS" when regs close will represent their country.
+        For this tournament that means countries will not have tryouts, the players 8 ranked closest to 100k after "quasi-BWS" when regs close will represent their country.
     </p>
     <h2>European Countries</h2>
         <h4>For the purpose of this tournament, the following countries are eligible:</h4>
@@ -58,17 +58,14 @@
 
   <h2>What do you mean by "BWS"?</h2>
     <p>
-        We are using a quasi Badge-Weighting-System(BWS). Players will have to self-report recent tournament wins, and those will be treated like badges. If a player fails to correctly self-report, and this is brought to our attention by a third party after screening is complete, they will be disqualified. If screening is not yet complete or they self-reported and are still eligible rank-wise, they will be permitted to participate.
+        We are using a quasi Badge-Weighting-System(BWS). Please read the section below further describing the system:
     </p>
   <h2>Rules</h2>
     <h3>Quasi Badge-Weighting-System (BWS)</h3>
         <p>
             This Tournament uses a quasi Badge-Weighting-System (BWS). This is because tournaments at this rank range are not badged, but we want to exclude derankers who ruin the fun for everyone else.
-            <br>Players will have to self-report recent tournament wins (past 12 months), and those will be treated like badges.
-            <br>If a player fails to correctly self-report, and this is brought to our attention by a third party after screening is complete, they will be disqualified. 
-            <br>If screening is not yet complete or they self-reported and are still eligible rank-wise, they will be permitted to participate.
-            <br>The BWS formula we use is Rank^(0.9915^(badges^2))
-            <br> BWS Calculator: Rank-<input type="number" id="rank"> Wins-<input type="number" id="badges"> <input type="button" value="Calculate" onclick="BWS()"> Result-<input type="text" readonly="true" id="result">
+            <br>We will be using Elitebotix to grab users' top 100 ranked tourney plays, and then run them through https://github.com/MorgenAnSpyrys/osu_true_rank
+            <br>This will result in a new PP rating. If your new PP exceeds the amount provided by Bathbot's <rank 100000 at time of reg close, you will be screened out as out of range.
         </p>
     <h3>Eligibility</h3>
         <p>
