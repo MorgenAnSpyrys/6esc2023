@@ -6,16 +6,6 @@
 <link rel="stylesheet" href="">
 <style>
 </style>
-<script type="text/javascript">
-    function BWS(){
-        console.log('triggered')
-        let rank = parseInt(document.getElementById("rank").value)
-        let badges = parseInt(document.getElementById("badges").value)
-        let bws = Math.pow(rank,Math.pow(0.9915,Math.pow(badges,2)))
-        document.getElementById('result').value = bws.toString()
-    }
-    
-</script>
 <body>
 
 <div class="">
@@ -28,7 +18,7 @@
     <p>
         6 Digit European Suiji Cup (6ESC) is a 6 Digit (100k+) 4v4 teamsize 8 Suiji National tournament limited to European* countries. 
         Suiji format allows unlimited signups, but only the x highest rank players qualify. 
-        For this tournament that means countries will not have tryouts, the players 8 ranked closest to 100k after "quasi-BWS" when regs close will represent their country.
+        For this tournament that means countries will not have tryouts, the players 8 ranked closest to 100k after rank adjustment when regs close will represent their country.
     </p>
     <h2>European Countries</h2>
         <h4>For the purpose of this tournament, the following countries are eligible:</h4>
@@ -56,22 +46,22 @@
 
     
 
-  <h2>What do you mean by "BWS"?</h2>
+  <h2>What do you mean by rank adjustment?</h2>
     <p>
-        We are using a quasi Badge-Weighting-System(BWS). Please read the section below further describing the system:
+        We are using a rank adjustment system. Please read the section below further describing the system:
     </p>
   <h2>Rules</h2>
-    <h3>Quasi Badge-Weighting-System (BWS)</h3>
+    <h3>Rank adjustment system</h3>
         <p>
             The original quasi-bws functioned by relying on user self-reports, and we have since deprecated it in favour of the following system:
-            <br>This Tournament uses a quasi Badge-Weighting-System (BWS). This is because tournaments at this rank range are not badged, but we want to exclude derankers who ruin the fun for everyone else.
+            <br>This Tournament uses a Rank adjustment system. This is because tournaments at this rank range are not badged so we can't use BWS, but we want to exclude derankers who ruin the fun for everyone else.
             <br>We will be using Elitebotix to grab users' top 100 ranked tourney plays, and then run them through https://github.com/MorgenAnSpyrys/osu_true_rank
             <br>This will result in a new PP rating. If your new PP exceeds the amount provided by Bathbot's /rank 100000 at time of reg close, you will be screened out as out of range.
         </p>
     <h3>Eligibility</h3>
         <p>
-            <br>Players ranked between and including 100000 to 999999 Post-BWS at time of registration closing may be eligible to participate.
-            <br>Ranking to 99999 (post-BWS) or higher within 90 days of regs closing will result in ineligibility. This is meant to discourage deranking.
+            <br>Players ranked between and including 100000 to 999999 Post-rank-adjustment at time of registration closing may be eligible to participate.
+            <br>Ranking to 99999 (Post-rank-adjustment) or higher within 90 days of regs closing will result in ineligibility. This is meant to discourage deranking.
         </p>
     
 </div>
